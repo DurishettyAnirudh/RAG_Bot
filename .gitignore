@@ -1,0 +1,27 @@
+# Ignore .env for secrets
+.env
+
+# Ignore vector store index files
+vectorstores/
+*.faiss
+
+# Ignore text record of processed PDFs
+example.txt
+
+# Ignore PDF files (you probably don’t want raw PDFs on GitHub)
+pdfs/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore logs
+*.log
+
+# Ignore system files
+.DS_Store
+
+# Optional: VSCode settings if you use VSCode
+.vscode/
+
+ragbotenv/
