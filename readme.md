@@ -19,8 +19,7 @@ This is a simple Discord bot that uses a **RAG (Retrieval-Augmented Generation)*
 ├── vectorstores/   # Local FAISS index (created automatically, ignored)
 ├── pdfs/           # Your source PDF files (ignored)
 └── example.txt     # Tracks processed files (ignored)
-
-
+```
 ---
 
 ## ⚙️ Requirements
