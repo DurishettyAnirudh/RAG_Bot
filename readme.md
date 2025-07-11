@@ -39,19 +39,16 @@ This is a simple Discord bot that uses a **RAG (Retrieval-Augmented Generation)*
    git clone git@github.com:DurishettyAnirudh/RAG_Bot.git
    cd RAG_Bot
 
-
 2. **Create and activate a virtual environment**
    ```bash
     python -m venv venv
     source venv/bin/activate  # On Linux/Mac
     venv\Scripts\activate     # On Windows
 
-
 3. **Install dependencies**
 
    ```bash
     pip install -r requirements.txt
-
 
 4. **Create .env**
    ```bash
