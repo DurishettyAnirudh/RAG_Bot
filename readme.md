@@ -10,13 +10,15 @@ This is a simple Discord bot that uses a **RAG (Retrieval-Augmented Generation)*
 ---
 
 ## 📂 Project Structure
-├── bot.py # Discord bot main entry
-├── rag.py # RAG (retrieval, chunking, embedding) logic
+```plaintext
+📂 Project Root
+├── bot.py          # Discord bot main entry
+├── rag.py          # RAG (retrieval, chunking, embedding) logic
 ├── requirements.txt
-├── .env # (Not committed) Store your secrets like BOT_TOKEN
-├── vectorstores/ # Local FAISS index (ignored)
-├── pdfs/ # Your source PDF files (ignored)
-└── example.txt # Tracks processed files (ignored)
+├── .env            # (Not committed) Store your secrets like BOT_TOKEN
+├── vectorstores/   # Local FAISS index (created automatically, ignored)
+├── pdfs/           # Your source PDF files (ignored)
+└── example.txt     # Tracks processed files (ignored)
 
 
 ---
@@ -35,34 +37,35 @@ This is a simple Discord bot that uses a **RAG (Retrieval-Augmented Generation)*
 1. **Clone this repository**
 
    ```bash
-   git clone https://github.com/YOUR-USERNAME/YOUR-REPO.git
-   cd YOUR-REPO
+   git clone git@github.com:DurishettyAnirudh/RAG_Bot.git
+   cd RAG_Bot
 
 
 2. **Create and activate a virtual environment**
-
-python -m venv venv
-source venv/bin/activate  # On Linux/Mac
-venv\Scripts\activate     # On Windows
+   ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Linux/Mac
+    venv\Scripts\activate     # On Windows
 
 
 3. **Install dependencies**
 
-pip install -r requirements.txt
+   ```bash
+    pip install -r requirements.txt
 
 
 4. **Create .env**
+   ```bash
+   BOT_TOKEN=YOUR_DISCORD_BOT_TOKEN
 
-BOT_TOKEN=YOUR_DISCORD_BOT_TOKEN
-
-### Running the Bot
+## Running the Bot
 
 1. Make sure your Ollama server is running on http://localhost:11434.
 2. Add your PDFs to the pdfs/ folder.
 3. Run the bot: python bot.py
 
 
-### ⚠️ Notes
+## ⚠️ Notes
 
 The vector store and PDF files are ignored from version control (.gitignore).
 Keep your .env secret — never commit it!
