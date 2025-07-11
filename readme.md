@@ -16,7 +16,7 @@ This is a simple Discord bot that uses a **RAG (Retrieval-Augmented Generation)*
 ├── .env # (Not committed) Store your secrets like BOT_TOKEN
 ├── vectorstores/ # Local FAISS index (ignored)
 ├── pdfs/ # Your source PDF files (ignored)
-└── example.txt # Tracks processed files (ignored
+└── example.txt # Tracks processed files (ignored)
 
 
 ---
