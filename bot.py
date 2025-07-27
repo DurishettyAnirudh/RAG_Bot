@@ -39,7 +39,7 @@ async def ask(ctx, *, query: str = None):
         return
 
     if not query:
-        await ctx.send("❓ Please provide a question. Usage: `!ask <your question>`")
+        await ctx.send("Please provide a question. Usage: `!ask <your question>`")
         return
 
     logging.info(f"Received query from {ctx.author}: {query}")
@@ -48,7 +48,7 @@ async def ask(ctx, *, query: str = None):
         response = handle_user_query(query, db)
 
     if not response:
-        await ctx.send("❌ Sorry, I couldn't generate an answer right now. Please try again later.")
+        await ctx.send("Sorry, I couldn't generate an answer right now. Please try again later.")
     else:
         await ctx.send(response)
 

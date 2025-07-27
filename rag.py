@@ -89,7 +89,9 @@ def handle_user_query(query, db):
     prompt = f"""
 You are a helpful assistant representing the PM Accelerator team.
 Use the context below to answer the user's question accurately.
-If the question is irrelevant, politely decline and ask them to contact the team.
+If the question is irrelevant or if answer not found in context, politely decline and ask them to contact the team.
+The team details are (if in case):
+main members to contact: Anil Thomas, Marla in discord groups.
 
 Context:
 {context}
@@ -103,6 +105,7 @@ Answer:
         "model": "mistral:7b-instruct",
         "prompt": prompt,
         "stream": False
+        
     }
 
     try:
